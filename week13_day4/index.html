@@ -1,0 +1,72 @@
+<!-- Create 4 divs
+- give different background-colours and sizes
+- content inside div is your choice
+- leave first at default position
+- second relative
+- third absolute
+- fourth fixed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel ="stylesheet" href=style.css />
+
+    <style>
+        .parent{
+            position: relative;
+            top : 50px;
+
+        }
+        .div1{
+            background-color: red;
+            font-size: 100px;
+            position:fixed;
+           
+            margin-left: 50%;
+            /* left: 50%;
+            transform: translate(-50%, -50%); */
+
+        }
+
+        .div2{
+            background-color: seagreen;
+            font-size: 12px;
+            position: relative;
+            top: 50px;
+            left: 100px;
+
+        }
+
+        .div3{
+            background-color: steelblue;
+            font-size: 150px;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        .div4{
+            background-color: tomato;
+            font-size:175px;
+            position: fixed;
+            /* top: 50px;
+            left: 100px;
+            right */
+        }
+
+    </style>
+</head>
+<body style="height: 1000px;">
+    <div class="div1">Facebook</div>
+    <div class="div2">Division2</div>
+
+   
+    <!-- <div class="parent">
+        <div class="div3">Division3</div>
+    </div>
+   
+    <div class="div4">Division4</div> -->
+</body>
+</html>

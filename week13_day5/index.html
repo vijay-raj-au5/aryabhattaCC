@@ -1,0 +1,47 @@
+<!-- CC
+Animate the background and size of a button when hovered -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate while Hovering</title>
+    <link href='style.css' />
+
+
+    <style>
+        .btn {
+            background-color: blue;
+            color:white;
+            padding: 16px;
+            padding-left: 0;
+            margin: 32px;
+            margin: 32px 16px 64px 0;
+            /* margin-left:0; */
+            opacity: 0;
+            font-size: 64px;
+            transition: 5s; 
+            border-radius: 10px;
+
+        }
+
+        .btn:hover {
+            opacity: 1;
+            font-size: 96px;
+            background-color: red;
+            
+        }
+
+
+        
+
+    </style>
+</head>
+
+
+<body>
+    <h2>Change the background and Size of the Button</h2>
+    <button class='btn'>Hover Over Me!</button>
+    
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <style>
+        * {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            
+        }
+        header{
+            position:fixed;
+            width: 100%;
+            margin-top:-80px;
+        }
+        .nav1 {
+            display: flex;
+            flex-direction: row;
+            background-color: lightblue;
+            align-items: center;
+            width: 100%;
+            height:60px
+        }
+
+        .nav2{
+            font-size: 20px ;
+            margin-right: 16px;
+        }
+        .nav3 {
+            flex-grow: 1;
+            margin-left:32px;
+        }
+        a {
+            padding: 1em;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:white;
+            text-decoration: underline;
+        }
+        .div1 {
+            display:flex;
+            margin-top:80px;
+        }
+        .sidebar {
+            display:flex;
+            flex-direction: column;
+            flex: 1 1 0
+
+        }
+
+        .filter {
+            align-self: center;
+            padding: 16px;
+        }
+        .main {
+            flex: 5 1 0
+        }
+        .products {
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            display:flex;
+            flex-direction: column;
+            padding: 2%;
+            flex-grow: 1;
+            flex-basis: 10%;
+        }
+
+        .product-info {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        footer{
+            background-color: #555;
+            color:#bbb
+            height: 150px;
+        }
+
+        .ft-main{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-around;
+        }
+
+        .ft-title{
+            color:#ffff;
+            
+        }
+
+        .ft-legal{
+            /* background-color: #333; */
+        }
+
+        .ft-legal-list {
+            display:flex;
+            flex-wrap:wrap;
+            color:white;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class='nav1'>
+            <div class='nav3'><img src='public/logo.png' alt ='Logo' width='40' height='40'/></div>
+            <div class='nav2'><a href='#' style='font-size: 20px;'>Home</a></div>
+            <div class='nav2'><a href='#'>Profile</a></div>
+            <div class='nav2'><a href='#'>Contact</a></div>
+        </nav>
+    </header>
+    <div class='div1'>
+        <div class='sidebar'>
+            <div class="filter">
+                <label style='font-size: 20px';><strong>Filter By:</strong></label>
+                <select>
+                    <option value='/'>All Jackets</option>
+                    <option value='/'>Sweater></option>
+                </select>
+            </div>
+            <div class='filter'>
+                <label style='font-size: 20px';><strong>Sort By:</strong></label>
+                <select>
+                    <option value='/'>Featured</option>
+                    <option value='/'>Price</option>
+                </select>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class='main'>
+            <section class='products'>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h3>Winter Jacket</h3>
+                        <h4>Rs.1000</h4>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+                <div class='product-card'>
+                    <div class='product-image'>
+                        <img src='public/jacket-01.jpeg'>
+                    </div>
+                
+                
+                    <div class='product-info'>
+                        <h5>Winter Jacket</h5>
+                        <h6>Rs.1000</h6>
+                    </div>
+                </div>
+               
+            </section>
+        </div>
+    </div>
+    <footer>
+        <section class="ft-main">
+            <div class="ft-main-item">
+              <h2 class="ft-title">About</h2>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Resources</h2>
+              <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">eBooks</a></li>
+                <li><a href="#">Webinars</a></li>
+              </ul>
+            </div>
+            <div class="ft-main-item">
+              <h2 class="ft-title">Contact</h2>
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Advertise</a></li>
+              </ul>
+            </div>
+          </section>
+         
+          <!-- Footer legal -->
+          <section class="ft-legal">
+            <ul class="ft-legal-list">
+              <li><a href="#" style='color:white'>Terms &amp; Conditions</a></li>
+              <li><a href="#" style='color:white'>Privacy Policy</a></li>
+              <li>&copy; 2019 Copyright Nowrap Inc.</li>
+            </ul>
+          </section>
+    </footer>
+
+</body>
+</html>

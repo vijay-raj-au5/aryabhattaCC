@@ -1,0 +1,83 @@
+<!-- CC
+List all flex properties of parent and child in a table format -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container{
+            /* width:500px; */
+            height: 500px;
+            display:flex;
+            flex-direction: row;
+            border: 1px solid red; 
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; */
+            /* justify-content:center; */
+            /* align-items: stretch; */
+            align-content: space-between;
+            list-style: none;
+        }
+
+        li{
+            width:100px;
+            /* height: 100px; */
+            margin: 8px;
+            margin-left: 0;
+            background-color: aquamarine;
+        }
+
+        /* li:nth-child(1){
+            order:1;
+            
+        }
+
+        li:nth-child(2){
+            order:2;
+            flex-basis: 200px;
+            /* flex-grow: 1;
+            flex-shrink: 0; */
+        } */
+    </style>
+</head>
+<body>
+    <ul class='container'>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>1</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+</body>
+</html>
+
+<!-- Parent(Flex-Container):
+1.Flex-Direction
+2.Flex-Wrap
+3.Flex-Flow
+4.Justify-Content
+5.Align ITEMS
+6.Align Content
+
+Child(Flex-Items):
+1.Order
+2.Flex-grow
+3.Flex-Shrink
+4.Flex-basis -->
+
+<!-- main -axis(left to right) and column axis(top to down) -->
