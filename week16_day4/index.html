@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>Name: Vijay</li>
+        <li class='city'><b>         Hometown: Delhi  <br/> INDIA</b></li>
+        <br/>
+        <li>Name: Ravi</li>
+        <li class='city'>Hometown: Patna</li>
+        <br/>
+        <li>Name: Abhi</li>
+        <li class='city'>Hometown: Mumbai</li>
+    </ul>
+    
+    <script>
+        var town = document.getElementsByClassName('city');
+        // console.log(town);
+
+        for(let i = 0; i < town.length; i++) {
+            console.log(town[i].innerText);
+            console.log(town[i].innerHTML);
+            console.log(town[i].textContent);
+            town[i].innerHTML = 'Hometown: Bangalore';
+        }
+
+    </script>
+
+</body>
+</html>
